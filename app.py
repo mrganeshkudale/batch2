@@ -9,4 +9,4 @@ def welcome():
   return socket.gethostname()+" "+datetime.datetime.now().strftime("%d-%m-%y %H:%M:%S")
 
 if __name__ == '__main__':
-  app.run('0.0.0.0','5000')
+  app.run(host='0.0.0.0',port=80)
